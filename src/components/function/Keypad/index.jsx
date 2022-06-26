@@ -1,7 +1,7 @@
 import React from 'react'
 import {NUMBERS} from '@/constants/variables'
 import {KeypadStyle} from '@/components/styles/stylesKeypad'
-import {Button} from "@/components/Button"
+import {Button} from "@/components/function/Button"
 import {useDispatch, useSelector} from "react-redux"
 import {
   addToDisplay,

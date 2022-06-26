@@ -1,18 +1,12 @@
 import React from 'react'
-
-import {HomePageContainer} from './components'
-import {Display} from "@/components/Display"
-import {History} from "@/components/History"
-import {Keypad} from "@/components/Keypad"
-import {Header} from "@/components/Header"
+import {Calculator} from "@/components/function/Calculator"
+import ErrorBoundary from "@/components/class/ErrorBoundary/ErrorBoundary"
+import CalculatorClass from "@/components/class/Calculator"
 
 export const HomePage = () => {
   return (
-    <HomePageContainer>
-      <Header/>
-      <Display/>
-      <Keypad/>
-      <History/>
-    </HomePageContainer>
+    <ErrorBoundary>
+      <CalculatorClass/>
+    </ErrorBoundary>
   )
 }
