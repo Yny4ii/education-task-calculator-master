@@ -8,7 +8,6 @@ const themeSlice = createSlice({
   reducers: {
     changeTheme(state, action) {
       state.theme = action.payload
-      console.log(state.theme + 'qweqweqweqweqwe')
     },
   },
 })

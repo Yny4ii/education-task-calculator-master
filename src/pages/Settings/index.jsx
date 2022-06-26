@@ -9,13 +9,16 @@ export const Settings = () => {
   const toggleTheme = event => {
     dispatch(changeTheme(event.target.value))
   }
+  const onClickClearHistory = () => {
+    dispatch(clearHistory())
+  }
   return (
     <React.Fragment>
       <Select className="select" onChange={toggleTheme}>
         <option value="light">Light</option>
         <option value="dark">Dark</option>
       </Select>
-      <ClearHistoryButton onClick={dispatch(clearHistory())}>Clear history</ClearHistoryButton>
+      <ClearHistoryButton onClick={onClickClearHistory}>Clear history</ClearHistoryButton>
     </React.Fragment>
   )
 }

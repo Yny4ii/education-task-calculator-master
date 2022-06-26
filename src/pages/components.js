@@ -17,9 +17,3 @@ export const Card = styled.div`
   padding: ${({theme}) => theme.spaces[4]}px;
 `
 
-export const HomePageContainer = styled.div`
-height: 100%;
-
-
-`
-
